@@ -3,7 +3,7 @@ mydb=ms.connect(host='localhost',user='root',password='Neeraj@123',database='atm
 mycur=mydb.cursor()
 mycur.execute('Select pin from cos_data')
 write=mycur.fetchall()
-for l in range(2):
+for l in range(100):
     print('\t\t\tWelcome in Bank of India\n\t\t\tInsert your Debit card details.')
     pin=input('Enter your pin: ')
     for i in write:
